@@ -1,0 +1,14 @@
+<project name="android-joystick" default="jar" basedir=".">
+  <description>
+  	A joystick component for Android  
+  </description>
+  <!-- set global properties for this build -->
+  <property name="src" location="src" />
+  <property name="bin" location="bin" />
+
+  <target name="jar">
+    <jar destfile="android-joystick.jar" basedir="bin/">
+      <include name="ch/**" />
+    </jar>
+  </target>
+</project>
